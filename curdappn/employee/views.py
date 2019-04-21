@@ -1,6 +1,9 @@
 from django.shortcuts import render, redirect
 from employee.forms import EmployeeForm
 from employee.models import Employee
+from django.http import HttpResponse
+from curdappn import settings
+from django.core.mail import send_mail
 
 # Create your views here.
 def emp(request):
@@ -32,3 +35,14 @@ def destroy(request, id):
     employee = Employee.objects.get(id=id)
     employee.delete()
     return redirect("/show")
+
+
+# Send mail..
+def mail(request):
+    subject = "Gretting"
+    msg = "Congo dude.."
+    to = "sondagarashish@gmail.com,ashish1997it@gmail.com"
+    res = send_mail(subject, msg, settings.EMAIL_HOST_USER, [to])
+
+    msg = "Mail sent successfuly" if(1==res) else "Mail could not send!"
+    return HttpResponse(msg)
