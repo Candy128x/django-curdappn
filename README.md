@@ -14,3 +14,8 @@
 ## Edit a employee data
 - Click on 'Edit' link/Action.
 <kbd>![screen-shot](https://trello-attachments.s3.amazonaws.com/5c8d0103d132df3081b9a52f/5cb9b06a909dc25963fec3f1/3cd46fbf9b68fd8984fbda727a1972df/upload_20/4/2019_at_01_30_27.png)</kbd>
+
+---
+## Sent mail
+- Hit: http://127.0.0.1:8000/mail OR localhost:8000/mail in browser
+<kbd>![screen-shot](https://trello-attachments.s3.amazonaws.com/5c8d0103d132df3081b9a52f/5cb9b06a909dc25963fec3f1/3e2d9d476bb5bc3b242fae387805dc34/image.png)</kbd>
